@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('apps.ninja_gold.urls'))
+    url(r'^', include('apps.ninja_gold.urls')),
+    url(r'^', include('apps.ninja_gold_bonus.urls'))
 ]

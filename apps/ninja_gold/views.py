@@ -7,6 +7,10 @@ import datetime
 # Create your views here.
 
 def index(request):
+    print "*" * 50
+    print "Running ninja_gold"
+    print "*" * 50
+    
     if 'total' not in request.session:
         request.session['total'] = 0
     if 'activity' not in request.session:
